@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Evolução da Multimídia Automotiva</title>
+    <style>
+        /* Paleta de Cores:
+         * #000000 - Fundo Principal
+         * #CFFFE2 - Destaque Vibrante (Títulos, Anos)
+         * #A2D5C6 - Destaque Sutil (Bordas, H3)
+         * #F6F6F6 - Fundo Secundário e Texto Principal
+         */
+
+        body {
+            background-color: #000000;
+            color: #F6F6F6;
+            font-family: 'IBM Plex Serif', serif;
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Chivo', sans-serif;
+            margin: 0;
+            font-weight: 700;
+            /* Use bold for titles */
+        }
+
+        h1 {
+            color: #CFFFE2;
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            color: #CFFFE2;
+            font-size: 2.2rem;
+
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            color: #A2D5C6;
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-top: 0;
+        }
+
+        strong {
+            color: #A2D5C6;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 2rem 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            /* Animação de entrada */
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+        }
+
+        .timeline-item.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .timeline-year {
+            color: #CFFFE2;
+            font-size: 3rem;
+            /* Tamanho da fonte aumentado para destaque */
+            font-weight: 700;
+            flex-shrink: 0;
+            text-align: right;
+            padding-top: 0.5rem;
+            width: 100px;
+            margin-right: 16px;
+        }
+
+        .timeline-content {
+            background-color: #000000;
+            border-left: 5px solid #A2D5C6;
+            padding: 2.5rem;
+            /* Padding interno aumentado */
+            flex-grow: 1;
+            box-shadow: 0 4px 8px rgba(162, 213, 198, 0.1);
+            /* Sombra para profundidade */
+            border-radius: 8px;
+            /* Cantos arredondados */
+        }
+
+        .timeline-content img {
+            width: 600px;
+            height:400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 1rem;
+            margin-bottom: 0;
+            /* Espaçamento ajustado */
+            border: 2px solid #A2D5C6;
+            display: block;
+            max-width: 100%;
+        }
+
+        /* Acessibilidade - Sombra no texto */
+        .timeline-content p {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            font-weight: 400;
+            /* Peso de fonte para o corpo do texto */
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            .timeline-item {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .timeline-year {
+                text-align: left;
+                width: auto;
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <!-- Use Google Fonts for the new fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&family=IBM+Plex+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>A Evolução da Multimídia Automotiva</h1>
+
+        <div class="section">
+            <p>Da simplicidade analógica à complexidade digital, as interfaces de multimídia de carros percorreram um
+                longo caminho. O que começou como um simples rádio para ouvir notícias e músicas se transformou em um
+                centro de comando e entretenimento integrado. Esta linha do tempo explora como a interação entre o
+                motorista e o veículo evoluiu, destacando marcos importantes no hardware e software que moldaram a
+                experiência automotiva moderna.</p>
+        </div>
+
+        <hr style="border: 1px solid #A2D5C6;">
+
+        <h2>1. A Era Analógica (1930 - 1980)</h2>
+
+        <div class="section">
+            <p style="margin-bottom: 16px;">Tudo começou com a simplicidade. O foco era unicamente no entretenimento
+                básico, com interfaces que consistiam em botões e mostradores físicos.</p>
+
+            <div class="timeline-item">
+                <div class="timeline-year">1930</div>
+                <div class="timeline-content">
+                    <h3>O Início do Rádio Automotivo</h3>
+                    <p>O primeiro rádio para carro, o Motorola 5T71, foi lançado. A interface era rudimentar, com botões
+                        para sintonizar as estações <strong>AM</strong> e ajustar o volume. O alto preço tornava o item
+                        um luxo para poucos.</p>
+                    <img src="radio.png" alt="Imagem de um rádio automotivo antigo Motorola 5T71 com botões e dial." />
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">1952</div>
+                <div class="timeline-content">
+                    <h3>A Chegada do FM</h3>
+                    <p>A Blaupunkt lança o primeiro rádio com <strong>FM</strong> (Frequência Modulada). A interface se
+                        manteve a mesma, mas a qualidade do som melhorou, reduzindo interferências e ruídos. Isso marcou
+                        a primeira grande evolução na experiência de áudio.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">1960s</div>
+                <div class="timeline-content">
+                    <h3>O Boom do Som Pessoal</h3>
+                    <p>Com o surgimento das fitas de <strong>cartucho</strong> e, em seguida, as <strong>fitas
+                            cassete</strong>, os motoristas ganharam a capacidade de escolher e levar suas próprias
+                        músicas. A interface ganhou um novo elemento: o slot para inserir a fita, além de botões para
+                        avançar, retroceder e ejetar.</p>
+                    <img src="cassete.png"
+                        alt="Imagem de um painel de carro dos anos 60 com um rádio e slot para fita cassete." />
+                </div>
+            </div>
+        </div>
+
+        <hr style="border: 1px solid #A2D5C6;">
+
+        <h2>2. A Transição para o Digital (1990 - 2000)</h2>
+
+        <div class="section">
+            <p style="margin-bottom: 32px;">A tecnologia digital começa a se infiltrar nos carros. Interfaces híbridas
+                (físicas e digitais) surgem, trazendo mais funcionalidades e um vislumbre do futuro.</p>
+
+            <div class="timeline-item">
+                <div class="timeline-year">1990s</div>
+                <div class="timeline-content">
+                    <h3>Compact Discs (CDs) e GPS</h3>
+                    <p>Os <strong>CD players</strong> substituem as fitas, oferecendo melhor qualidade de áudio e a
+                        capacidade de pular para faixas específicas. Na mesma época, os primeiros sistemas de
+                        <strong>navegação GPS</strong> embarcados, como o Honda Electro Gyrocator, aparecem em carros de
+                        luxo. A interface de navegação era complexa, com telas monocromáticas e comandos por botões,
+                        exigindo a inserção manual de mapas em mídias físicas.</p>
+                    <img src="90s.png" alt="Imagem de um sistema de navegação GPS antigo com tela monocromática." />
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2000s</div>
+                <div class="timeline-content">
+                    <h3>O Início das Telas Coloridas</h3>
+                    <p>Surgem as primeiras centrais de multimídia com telas <strong>LCD coloridas</strong>. Embora ainda
+                        controladas por botões e dial, elas ofereciam uma interface visual mais rica para funções como
+                        GPS, rádio e, posteriormente, a exibição da câmera de ré. A usabilidade, no entanto, ainda era
+                        limitada e muitas vezes complexa.</p>
+                    <img src="an2000.png"
+                        alt="Imagem de um painel de carro dos anos 2000 com uma pequena tela LCD colorida no centro." />
+                </div>
+            </div>
+        </div>
+
+        <hr style="border: 1px solid #A2D5C6;">
+
+        <h2>3. A Revolução Touchscreen e a Conectividade (2010 - Hoje)</h2>
+
+        <div class="section">
+            <p style="margin-bottom: 32px;">A interface do celular migra para o carro, redefinindo completamente a
+                interação. O foco passa a ser na <strong>integração</strong>, <strong>simplicidade</strong> e
+                <strong>experiência do usuário (UX)</strong>.</p>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2010s</div>
+                <div class="timeline-content">
+                    <h3>Interfaces Touchscreen</h3>
+                    <p>As telas sensíveis ao toque se tornam o padrão. A eliminação de botões físicos em favor de uma
+                        interface digital unificada permite um design de painel mais limpo e minimalista. A interação se
+                        torna mais <strong>direta e intuitiva</strong>, similar à de um smartphone, embora os desafios
+                        de segurança e usabilidade durante a condução continuem sendo um ponto de atenção.</p>
+                    <img src="aan2010].png"
+                        alt="Imagem de uma interface touchscreen de carro com ícones grandes e simples." />
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="timeline-year">2014</div>
+                <div class="timeline-content">
+                    <h3>Android Auto e Apple CarPlay</h3>
+                    <p>O surgimento dessas plataformas é um divisor de águas. Elas permitem que o motorista espelhe a
+                        interface de seu celular na tela do carro, acessando aplicativos de navegação, música e
+                        mensagens de forma segura e familiar. Essa inovação prioriza a <strong>proximidade</strong> da
+                        experiência do usuário, integrando-o ao ecossistema já existente.</p>
+                    <img src="s2014s.png"
+                        alt="Imagem de uma tela de carro exibindo as interfaces do Android Auto e Apple CarPlay." />
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2020s</div>
+                <div class="timeline-content">
+                    <h3>Sistemas Integrados e Conectados</h3>
+                    <p>A evolução atual foca em interfaces totalmente digitais e conectadas. O painel de instrumentos se
+                        torna uma tela, e as telas de multimídia se fundem em um único display gigante, como em carros
+                        elétricos. Os sistemas contam com <strong>comandos de voz avançados</strong>,
+                        <strong>atualizações over-the-air</strong> e integração com a internet (4G/5G). A experiência é
+                        cada vez mais personalizada e inteligente, adaptando-se às necessidades do usuário em tempo
+                        real.</p>
+                    <img src="image.png"
+                        alt="Imagem de um painel de carro elétrico com um display único e grande cobrindo toda a área central." />
+                </div>
+            </div>
+        </div>
+
+
+        <hr style="border: 1px solid #A2D5C6;">
+
+        <div class="section">
+            <p>A jornada da multimídia automotiva, de um simples acessório de rádio a um centro de comando digital, é um
+                reflexo direto do avanço da tecnologia e da mudança nas expectativas dos consumidores. A tendência
+                continua em direção a interfaces cada vez mais fluidas, preditivas e perfeitamente integradas à nossa
+                vida digital.</p>
+        </div>
+
+    </div>
+
+    <script>
+        // Função para verificar se o elemento está visível na tela
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Função para adicionar a classe "in-view" quando o elemento estiver visível
+        function handleScrollAnimations() {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            timelineItems.forEach(item => {
+                if (isElementInViewport(item)) {
+                    item.classList.add('in-view');
+                }
+            });
+        }
+
+        // Adiciona o listener de scroll para as animações
+        window.addEventListener('scroll', handleScrollAnimations);
+
+        // Roda a função uma vez no carregamento da página para os elementos que já estão visíveis
+        window.addEventListener('load', handleScrollAnimations);
+    </script>
+
+</body>
+
+</html>
